@@ -66,3 +66,58 @@ h1, h2 {
     background-color: var(--blanco);
     padding: 5rem;
 }
+
+/* 2.- Flex Direction */
+.d-flex-2{
+    display: flex;
+    /*
+    NOTAS 
+    row *** hacia la derecha (default)
+    column *** hacia abajo
+    (row-column)-reverse *** se muestra el order invertido
+     */
+}
+
+/* 3.- Justify Content (Dirección Row) */
+
+.d-flex-3{
+    display: flex;
+    justify-content: center;
+     /*
+    NOTAS 
+    Con la propiedad
+    justify-content:
+
+    Se puede realizar el acomoda de la informacion de esta forma
+    flex-start *** Al inicio
+    center *** Posiciona en medio
+    flex-end *** Posiciona al final
+    space-between *** Posiciona esquineados con espacio en tre ellos
+    space-around *** el mismo espacio a todos los lados respetando el de cada elemento
+    space-evenly *** el mismo espacio distribuido del contenedor
+     */
+}
+
+/* 4.- Justify Content (Dirección Column) */
+
+.d-flex-4{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    border: 1px solid gray;
+    justify-content: center;
+    /*     
+    con la rotacion se puede con justify-content a comodar la informacion,
+    pero en direccion de las columnas 
+    Con la propiedad y una altura, puedes acomodar el contendio en el div
+    justify-content:
+
+    Se puede realizar el acomoda de la informacion de esta forma
+    center
+    flex-start
+    flex-end
+    space-between
+    space-around
+    space-evenly 
+    */
+}
