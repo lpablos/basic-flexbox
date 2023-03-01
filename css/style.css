@@ -121,3 +121,24 @@ h1, h2 {
     space-evenly 
     */
 }
+
+.d-flex-5{
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    align-items: center;
+
+
+    /* 
+    Aqui se toma la toda la altura
+    pero con aling item se controla ese estirar 
+    align-items, y todas sus catacteristicas
+    
+    stretch *** valor por defulat y toma el valor de la altura
+    flex-start *** alina hacia arriba con su tamaño
+    cneter *** al centro de la altura
+    flex-end *** Posicionar en la parte de abajo
+    base-line *** similar al flex-start, solo que se acomoda al contenido
+
+     */
+}
