@@ -208,3 +208,37 @@ h1, h2 {
 {
     flex-basis: calc(25% - 1rem);
 }
+
+.d-flex-10{
+    /* 
+    flex-grap.- permite el brinco de los hijo 
+    donde del contenedor pardes, 
+    cuando estos no quepan en el contendor 
+    */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.d-flex-10 .box{
+    flex-basis: 33.3%;
+}
+
+.d-flex-11{
+    display: flex;
+}
+
+/* Factor de cremiendo o cajas flexibles al ancho */
+.d-flex-11 .box{
+    flex-grow: 1;
+
+}
+
+.d-flex-11 .box:nth-child(1){
+    flex-grow: 2;
+}
+
+.d-flex-11 .box:nth-child(2),
+.d-flex-11 .box:nth-child(3){
+    flex-grow: 1;
+}
