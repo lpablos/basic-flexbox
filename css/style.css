@@ -171,3 +171,40 @@ h1, h2 {
     
     */
 }
+
+.d-flex-8{
+    display: flex;
+}
+
+/* flex basic se una solo en  hijos */
+.d-flex-8 .box{
+    /* 
+    ++++++solo para dar ancho++++++
+
+    with :   es una caracteristica  forzoa
+    flex-basis: Caracteristica inicila del ancho de un contenedor 
+    */
+    flex-basis: 200px;
+}
+
+/* gap y cal se unicamente en los hijos */
+.d-flex-9{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .d-flex-9 .box{
+    
+    flex-basis: calc(33.3% - 1rem);
+} */
+
+/* Calulas mas especificados */
+.d-flex-9 .box:nth-child(1){
+    flex-basis: calc(50% - 1rem);
+}
+
+.d-flex-9 .box:nth-child(2),
+.d-flex-9 .box:nth-child(3)
+{
+    flex-basis: calc(25% - 1rem);
+}
