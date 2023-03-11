@@ -242,3 +242,33 @@ h1, h2 {
 .d-flex-11 .box:nth-child(3){
     flex-grow: 1;
 }
+
+.d-flex-12{
+    display: flex;
+}
+.d-flex-12 .box{
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+.d-flex-12 .box:nth-child(3){
+    flex-shrink: 2;
+}
+
+.d-flex-13 {
+    display: flex;
+}
+
+.d-flex-13 .box{
+    /* Ancho inicial de los elementos */
+    /* flex-basis: 33.33%; */
+    /* Factor de crecimento a 1 */
+    /* flex-grow: 1; */
+    /* Fctor de reduccion controlada a 1 */
+    /* flex-shrink: 1; */
+
+
+    /* Todos los anterioes se resumen en uno solo */
+    /* 1.- grow , 2.- Shrink, 3.-basic */
+    flex: 1 2 33.33%;
+}
